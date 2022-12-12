@@ -26,16 +26,16 @@
       </header>
       <main>
         <div class="form">
-            <form action="">
+            <form action="form/Submit" method="post">
 
-                <input type="text" name="Title" id="" placeholder="Type a title here">
+                <input type="text" name="Title" id="" placeholder="Type a title here" required>
 
-                <input type="text" name="subtitle" id="subtitle" placeholder="Note subtitle">
+                <input type="text" name="subtitle" id="subtitle" placeholder="Note subtitle" required>
 
-                <input type="date" id="start" name="trip-start" value="Date" min="2018-01-01" max="2048-12-31" placeholder="Date">
+                <input type="date" id="start" name="trip-start" value="Date" min="2018-01-01" max="2048-12-31" placeholder="Date" required>
 
 
-                <textarea name="note" id="note" cols="40" rows="17" placeholder="Note description..."></textarea>
+                <textarea name="note" id="note" cols="40" rows="17" placeholder="Note description..." required></textarea>
             </form>
 
             <div class="mybutton">
