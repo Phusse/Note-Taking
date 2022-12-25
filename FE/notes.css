@@ -6,7 +6,9 @@
 
 html, 
 body {
-  font: 100%/1.5 Verdana, sans-serif
+  font: 100%/1.5 Verdana, sans-serif;
+  background-color: rgb(0, 0, 0);
+
 }
   a {
     color: #fff;
@@ -98,25 +100,20 @@ button img{
 .wrap{
   width: 50%;
   position: absolute;
-  top:20%;
+  top:18%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.notes{
-    width: 50%;
-    margin: 0 auto;
-    background-color: rgb(219, 0, 0);
-    margin-top: 10px;
-    border-radius: 10px;
 }
 #wrapper {
   margin: 0 auto;
   display: block;
   width: 100%;
   position: fixed;
-  top: 93vh;
+  top: 90vh;
   bottom: 0;
   text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+
 }
 .page-header {
   text-align: center;
@@ -136,7 +133,7 @@ button img{
   display: inline-block;
   text-decoration: none;
   padding: 5px 10px;
-  color: #000
+  color: #fff
 }
 
 /* Active and Hoverable Pagination */
@@ -153,7 +150,60 @@ button img{
 #pagination li a:hover:not(.active) {
   background-color: #ddd;
 } 
+.container{
+  width: 70%;
+  top: 50vh;
+  margin: 16vh auto;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  padding: 10px;
+}
+.card_notes1{
+ display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card_notes2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.note1{
+  background-color: #4caf50;
+  border-top-left-radius: 10px;
+  border-radius: 10px;
+  width: 17%;
+  padding: 10px;
+  line-height: 30px;
+}
+.content1{
+  font-size: 15px;
+  line-height: 18px;
 
+}
+.card_notes1 #note1{
+  background-color: #6871f1;
+}
+.card_notes1 #note2{
+  background-color: #b13252;
+}
+.card_notes1 #note3{
+  background-color: #f1b132;
+}
+.card_notes2 #note1{
+  background-color: #23232e;
+  color: rgba(255, 255, 255, 0.438);
+}
+.card_notes2 #note2{
+  background-color: #cc5638;
+}
+.card_notes2 #note3{
+ background-color: #ddd;
+}
+.card_notes2 #note4{
+  background-color: aquamarine;
+}
 /* border-pagination */
 .b-pagination-outer {
   width: 100%;
